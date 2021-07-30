@@ -21,6 +21,12 @@ public class Program2 {
 		for (Department d : list) {
 			System.out.println(d);
 		}
+		
+		System.out.println("=========== test 3: insert");
+		Department newDep = new Department(null, "Music");
+		depDao.insert(newDep);
+		System.out.println("insert! New id: " + newDep.getId());
+		
 	}
 
 }
